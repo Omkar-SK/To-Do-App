@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fa-solid fa-check"></i> To-Do App</h1>
+    
+    <button id="darkModeBtn" class="mode-btn"><i class="fa-solid fa-moon"></i> Dark Mode</button>
+
+    <div class="input-section">
+      <input id="taskInput" placeholder="Enter your task">
+      <button id="addBtn" class="add-btn"><i class="fa-solid fa-plus"></i> Add</button>
+      <button id="clearAll" class="clear-btn"><i class="fa-solid fa-trash"></i> Clear</button>
+    </div>
+
+    <p id="progressText">0 of 0 tasks completed</p>
+    <div class="progress-bar">
+      <div id="progress"></div>
+    </div>
+
+    <p id="congrats" class="hidden"><i class="fa-solid fa-hands-clapping"></i> Congratulations! All tasks are done!</p>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

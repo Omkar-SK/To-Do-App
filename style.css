@@ -1,0 +1,222 @@
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.3s;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  width: 380px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transition: background 0.3s;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+
+button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.add-btn {
+  background: #28a745;
+  color: white;
+}
+
+.add-btn:hover {
+  background: #218838;
+}
+
+.clear-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.clear-btn:hover {
+  background: #b52b38;
+}
+
+.mode-btn {
+  background: #007bff;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.mode-btn:hover {
+  background: #0056b3;
+}
+
+.fa-check{
+  color: #28a745;
+}
+
+.fa-plus{
+  color: black;
+}
+
+.fa-trash{
+  color: black;
+}
+
+.fa-moon{
+  color: rgb(248, 212, 5);
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, background 0.3s;
+}
+
+li:hover {
+  transform: scale(1.02);
+  background: #f1f1f1;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.check-task {
+  margin-right: 8px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background: #e63946;
+}
+
+
+.progress-bar {
+  background: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+#progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  transition: width 0.4s ease;
+}
+
+
+#congrats {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+
+body.dark-mode {
+  background: linear-gradient(135deg, #1f1f1f, #121212);
+  color: #e0e0e0;
+}
+
+body.dark-mode .container {
+  background: rgba(30, 30, 30, 0.95);
+  color: white;
+}
+
+body.dark-mode h1{
+  color: white;
+}
+
+body.dark-mode li {
+  background: #2a2a2a;
+  color: white
+  ;
+}
+
+body.dark-mode li:hover {
+  background: #333;
+}
+
+body.dark-mode input {
+  background: #2c2c2c;
+  color: white;
+  border: 1px solid #444;
+}
+
+body.dark-mode .progress-bar {
+  background: #333;
+}
+
+body.dark-mode #progress {
+  background: linear-gradient(90deg, #66bb6a, #43a047);
+}
+
+body.dark-mode #congrats {
+  color: #90ee90;
+}
